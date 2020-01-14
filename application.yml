@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active:
+    - dev           #默认环境设置为开发环境
+---
+spring:
+  profiles: dev     #开发环境
+  application: 
+    name: microservicecloud-config-hhd-dev
+---
+spring:
+  profiles: test   #测试环境
+  application: 
+    name: microservicecloud-config-hhd-test
+#  请保存为UTF-8格式
